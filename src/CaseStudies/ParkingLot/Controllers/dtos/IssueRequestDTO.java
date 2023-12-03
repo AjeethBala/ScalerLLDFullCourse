@@ -4,16 +4,16 @@ package CaseStudies.ParkingLot.Controllers.dtos;
 import CaseStudies.ParkingLot.Models.VehicleType;
 
 public class IssueRequestDTO {
-    private int vehicleNo;
+    private String vehicleNo;
     private VehicleType supportedVehicleType;
     private String vehicleOwnerName;
     private Long gateID;
 
-    public int getVehicleNo() {
+    public String getVehicleNo() {
         return vehicleNo;
     }
 
-    public void setVehicleNo(int vehicleNo) {
+    public void setVehicleNo(String vehicleNo) {
         this.vehicleNo = vehicleNo;
     }
 

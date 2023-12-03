@@ -3,17 +3,18 @@ package CaseStudies.ParkingLot.Models;
 import java.util.Date;
 
 public class Ticket extends BaseModel{
-    private int number;
+    private String number;
     private Vehicle vehicle;
     private Date entryTime;
     private ParkingSlot assignedSlot;
     private  Gate generatedat;
+    private  Operator generatedby;
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -57,5 +58,5 @@ public class Ticket extends BaseModel{
         this.generatedby = generatedby;
     }
 
-    private  Operator generatedby;
+
 }
